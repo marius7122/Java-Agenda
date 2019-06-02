@@ -16,7 +16,7 @@ public class Reminder implements DataFormat{
     }
 
     public String describe() {
-        return DataProcessing.dateToString(dueDate);
+        return DataProcessing.dateToString(dueDate) + ": " + description;
     }
 
     public String getDescription() {

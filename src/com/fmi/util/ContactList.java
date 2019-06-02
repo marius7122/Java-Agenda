@@ -25,8 +25,10 @@ public class ContactList {
             return;
 
         for(Contact aux: contacts) {
-            if(c.equals(aux))
+            if(aux.equals(c)) {
                 contacts.remove(c);
+                break;
+            }
         }
     }
 
@@ -56,4 +58,16 @@ public class ContactList {
         return null;
     }
 
+    // return contact at index
+    public Contact getIndex(int index) {
+        return contacts.get(index);
+    }
+
+    // print all contacts
+    public void printAllContacts() {
+        for(Contact c: contacts) {
+            System.out.println(c.toString());
+        }
+        System.out.println();
+    }
 }

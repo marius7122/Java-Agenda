@@ -38,13 +38,16 @@ public class Contact {
         for(Reminder r: reminders) {
             System.out.println(r.describe());
         }
+        System.out.println();
     }
-
 
     @Override
     public String toString() {
         return firstName + " " + lastName;
     }
+
+
+
 
     // getters and setters
     public String getFirstName() {
