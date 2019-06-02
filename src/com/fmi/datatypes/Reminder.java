@@ -7,8 +7,8 @@ import java.util.Date;
 
 public class Reminder implements DataFormat{
 
-    public String description;
-    public Date dueDate;
+    private String description;
+    private Date dueDate;
 
     public Reminder(String description, Date dueDate) {
         this.description = description;

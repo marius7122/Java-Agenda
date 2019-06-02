@@ -3,6 +3,7 @@ package com.fmi.util;
 import com.fmi.datatypes.*;
 
 import java.util.Comparator;
+import java.util.Date;
 import java.util.TreeSet;
 
 public class Contact {
@@ -27,6 +28,18 @@ public class Contact {
             }
         });
     }
+
+    public void addReminder(String description, Date dueDate) {
+        Reminder r = new Reminder(description, dueDate);
+        reminders.add(r);
+    }
+
+    public void printAllReminders() {
+        for(Reminder r: reminders) {
+            System.out.println(r.describe());
+        }
+    }
+
 
     @Override
     public String toString() {
