@@ -13,7 +13,7 @@ public class Adress implements DataFormat{
     }
 
     public String describe() {
-        return country + city + street;
+        return country + ", " + city + ", str. "+ street;
     }
 
 }

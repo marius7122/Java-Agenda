@@ -3,7 +3,10 @@ import com.fmi.datatypes.Organisation;
 import com.fmi.services.DataProcessing;
 import com.fmi.util.Contact;
 import com.fmi.util.ContactList;
+import com.fmi.util.Event;
+import com.fmi.util.Meeting;
 
+import javax.xml.stream.Location;
 import java.util.*;
 
 public class Main {
@@ -66,6 +69,31 @@ public class Main {
         c.printAllReminders();
         c.deleteOldReminders();
         c.printAllReminders();
+
+
+        // create events
+        Event e1 = new Event("Meet Marian",
+                new Adress("Romania", "Bucuresti", "Lipscani"),
+                DataProcessing.createDateFromString("2019-7-5"),
+                contacts.findAproximationMatch("Marian"));
+        Event e2 = new Event("Meet Ion",
+                new Adress("Romania", "Bucuresti", "Matasari"),
+                DataProcessing.createDateFromString("2019-5-5"),
+                contacts.findAproximationMatch("Ion"));
+        Event e3 = new Meeting("Meet programming team",
+                new Adress("Romania", "Bucuresti", "Mircea Grozavul"),
+                DataProcessing.createDateFromString("2019-8-1"),
+                new Contact[]{contacts.getIndex(0), contacts.getIndex(1)},
+                FMI);
+
+        // events test
+        System.out.println("events test");
+        System.out.println(e1.toString());
+        System.out.println(e2.toString());
+        System.out.println(e3.toString());
+        System.out.println("is e1 old? " + e1.isOld());
+        System.out.println("is e2 old? " + e2.isOld());
+        System.out.println("is e3 old? " + e3.isOld());
 
 
     }
