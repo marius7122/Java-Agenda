@@ -14,6 +14,10 @@ public class ContactList {
         this.contacts = new ArrayList<>(contacts);
     }
 
+    public ContactList(ContactList contacts) {
+        this.contacts = new ArrayList<>(contacts.contacts);
+    }
+
     // add a contact
     public void add(Contact c) {
         contacts.add(c);

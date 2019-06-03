@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f35c3a8e-869c-4233-a9df-fadcd53bd908" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/fmi/util/Event.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fmi/services/DataProcessing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fmi/services/DataProcessing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fmi/util/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fmi/util/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fmi/util/ContactList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fmi/util/ContactList.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,26 +18,52 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6">
-              <caret line="53" column="60" selection-start-line="53" selection-start-column="58" selection-end-line="53" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="343">
+              <caret line="39" column="36" lean-forward="true" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/fmi/util/Contact.java">
+        <entry file="file://$PROJECT_DIR$/src/com/fmi/util/Event.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+            <state relative-caret-position="171">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding>
-                <element signature="method#Contact#0;class#Contact#0" />
-                <element signature="class#705:901" />
-                <element signature="method#addReminder#0;class#Contact#0" />
-                <element signature="method#printAllReminders#0;class#Contact#0" />
-                <element signature="e#1138#1195#1" />
+                <element signature="method#Event#0;class#Event#0" />
+                <element signature="method#Event#1;class#Event#0" />
+                <element signature="method#Event#2;class#Event#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/fmi/util/ContactList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+              <folding>
+                <element signature="method#delete#0;class#ContactList#0" />
+                <element signature="method#findAproximationMatch#0;class#ContactList#0" />
+                <element signature="method#findExactMatch#0;class#ContactList#0" />
+                <element signature="method#printAllContacts#0;class#ContactList#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/fmi/services/DataProcessing.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+              <folding>
+                <element signature="method#dateToString#0;class#DataProcessing#0" />
+                <element signature="method#createDateFromString#0;class#DataProcessing#0" />
+                <element signature="e#615#710#0" />
+                <element signature="e#731#845#0" />
+                <element signature="method#createDateFromString#1;class#DataProcessing#0" />
               </folding>
             </state>
           </provider>
@@ -69,11 +94,12 @@
         <option value="$PROJECT_DIR$/src/com/fmi/datatypes/Organisation.java" />
         <option value="$PROJECT_DIR$/src/com/fmi/datatypes/PhoneNumber.java" />
         <option value="$PROJECT_DIR$/src/com/fmi/datatypes/Birthday.java" />
-        <option value="$PROJECT_DIR$/src/com/fmi/util/ContactList.java" />
         <option value="$PROJECT_DIR$/src/com/fmi/datatypes/Reminder.java" />
         <option value="$PROJECT_DIR$/src/com/fmi/services/DataProcessing.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/com/fmi/util/Contact.java" />
+        <option value="$PROJECT_DIR$/src/com/fmi/util/ContactList.java" />
+        <option value="$PROJECT_DIR$/src/com/fmi/util/Event.java" />
       </list>
     </option>
   </component>
@@ -137,7 +163,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559521457457" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559522704834" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -200,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559517991531</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implemented and tested delete old reminders functionality.">
+      <created>1559521503018</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1559521503018</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -221,15 +254,15 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3147651" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3147651" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" weight="0.3286119" />
-      <window_info anchor="bottom" id="Terminal" weight="0.27620396" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.2733711" />
       <window_info anchor="bottom" id="Event Log" sideWeight="0.50067115" side_tool="true" weight="0.34560907" />
       <window_info anchor="bottom" id="Messages" sideWeight="0.49932885" weight="0.34560907" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25070822" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25070822" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -248,7 +281,8 @@
     <MESSAGE value="Created datatypes and Contact util." />
     <MESSAGE value="Implemented some ContactList functionality, some DataProcessing function and tested Contacts." />
     <MESSAGE value="Tested the code, solved some issues." />
-    <option name="LAST_COMMIT_MESSAGE" value="Tested the code, solved some issues." />
+    <MESSAGE value="Implemented and tested delete old reminders functionality." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented and tested delete old reminders functionality." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/fmi/datatypes/Adress.java">
@@ -293,6 +327,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/fmi/datatypes/Reminder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+          <folding>
+            <element signature="method#Reminder#0;class#Reminder#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="39" column="36" lean-forward="true" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/fmi/util/Contact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="68" column="26" lean-forward="true" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
+          <folding>
+            <element signature="method#Contact#0;class#Contact#0" />
+            <element signature="method#addReminder#0;class#Contact#0" />
+            <element signature="method#printAllReminders#0;class#Contact#0" />
+            <element signature="method#deleteOldReminders#0;class#Contact#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/fmi/util/ContactList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+          <folding>
+            <element signature="method#delete#0;class#ContactList#0" />
+            <element signature="method#findAproximationMatch#0;class#ContactList#0" />
+            <element signature="method#findExactMatch#0;class#ContactList#0" />
+            <element signature="method#printAllContacts#0;class#ContactList#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/fmi/services/DataProcessing.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -307,49 +384,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/fmi/datatypes/Reminder.java">
+    <entry file="file://$PROJECT_DIR$/src/com/fmi/util/Event.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+        <state relative-caret-position="171">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
-            <element signature="method#Reminder#0;class#Reminder#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/fmi/util/ContactList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-          <folding>
-            <element signature="method#delete#0;class#ContactList#0" />
-            <element signature="method#findAproximationMatch#0;class#ContactList#0" />
-            <element signature="method#findExactMatch#0;class#ContactList#0" />
-            <element signature="method#printAllContacts#0;class#ContactList#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6">
-          <caret line="53" column="60" selection-start-line="53" selection-start-column="58" selection-end-line="53" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/fmi/util/Contact.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
-          <folding>
-            <element signature="method#Contact#0;class#Contact#0" />
-            <element signature="class#705:901" />
-            <element signature="method#addReminder#0;class#Contact#0" />
-            <element signature="method#printAllReminders#0;class#Contact#0" />
-            <element signature="e#1138#1195#1" />
+            <element signature="method#Event#0;class#Event#0" />
+            <element signature="method#Event#1;class#Event#0" />
+            <element signature="method#Event#2;class#Event#0" />
           </folding>
         </state>
       </provider>
