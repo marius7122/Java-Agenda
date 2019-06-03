@@ -11,6 +11,8 @@ import java.util.ArrayList;
 public class DeserializeService {
 
     public static ArrayList<Adress> deserializeAdresses(String path) {
+        AuditService.log("deserializeAdresses");
+
         ArrayList<Adress> adresses = new ArrayList<>();
         ArrayList<String> lines = FileService.readLinesFromFile(path);
 
@@ -22,6 +24,8 @@ public class DeserializeService {
     }
 
     public static ArrayList<Organisation> deserializeOrganisations(String path) {
+        AuditService.log("deserializeOrganisations");
+
         ArrayList<Organisation> organisations = new ArrayList<>();
         ArrayList<String> lines = FileService.readLinesFromFile(path);
 
@@ -32,8 +36,9 @@ public class DeserializeService {
         return organisations;
     }
 
-
     public static ArrayList<Contact> deserializeContacts(String path) {
+        AuditService.log("deserializeContacts");
+
         ArrayList<Contact> contacts = new ArrayList<>();
         ArrayList<String> lines = FileService.readLinesFromFile(path);
 
@@ -45,6 +50,8 @@ public class DeserializeService {
     }
 
     public static ArrayList<Reminder> deserializeReminders(String path) {
+        AuditService.log("deserializeReminders");
+
         ArrayList<Reminder> reminders = new ArrayList<>();
         ArrayList<String> lines = FileService.readLinesFromFile(path);
 

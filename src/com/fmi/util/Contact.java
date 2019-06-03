@@ -1,6 +1,7 @@
 package com.fmi.util;
 
 import com.fmi.datatypes.*;
+import com.fmi.services.AuditService;
 import com.fmi.services.DataProcessing;
 import com.fmi.services.SearchService;
 
@@ -56,15 +57,20 @@ public class Contact {
     }
 
     public void addReminder(String description, Date dueDate) {
+        AuditService.log("addReminder");
+
         Reminder r = new Reminder(description, dueDate, id);
         reminders.add(r);
     }
 
     public void addReminder(Reminder r) {
+        AuditService.log("addReminder");
         reminders.add(r);
     }
 
     public void printAllReminders() {
+        AuditService.log("printAllReminders");
+
         for(Reminder r: reminders) {
             System.out.println(r.describe());
         }
@@ -72,6 +78,8 @@ public class Contact {
     }
 
     public void deleteOldReminders() {
+        AuditService.log("deleteOldReminders");
+
         Date today = DataProcessing.today();
 
         Iterator<Reminder> iter = reminders.iterator();

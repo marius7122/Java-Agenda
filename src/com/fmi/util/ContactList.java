@@ -1,5 +1,7 @@
 package com.fmi.util;
 
+import com.fmi.services.AuditService;
+
 import java.util.ArrayList;
 
 public class ContactList {
@@ -20,11 +22,14 @@ public class ContactList {
 
     // add a contact
     public void add(Contact c) {
+        AuditService.log("ContactList.add");
         contacts.add(c);
     }
 
     // delete a contact
     public void delete(Contact c) {
+        AuditService.log("ContactList.delete");
+
         if(c == null)
             return;
 
@@ -38,6 +43,8 @@ public class ContactList {
 
     // search by first or last name
     public Contact findAproximationMatch(String name) {
+        AuditService.log("ContactList.findAproximationMatch");
+
         for(Contact c : contacts) {
             String firstName = c.getFirstName();
             String lastName = c.getLastName();
@@ -54,6 +61,8 @@ public class ContactList {
 
     // search by first and last name
     public Contact findExactMatch(String firstName, String lastName) {
+        AuditService.log("ContactList.findExactMatch");
+
         for(Contact c : contacts) {
             if(c.getFirstName().equals(firstName) && c.getLastName().equals(lastName)) {
                 return c;
@@ -69,6 +78,8 @@ public class ContactList {
 
     // print all contacts
     public void printAllContacts() {
+        AuditService.log("ContactList.printAll");
+
         for(Contact c: contacts) {
             System.out.println(c.toString());
         }

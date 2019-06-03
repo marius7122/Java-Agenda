@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f35c3a8e-869c-4233-a9df-fadcd53bd908" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/fmi/services/SearchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fmi/services/AuditService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fmi/datatypes/Reminder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fmi/datatypes/Reminder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fmi/services/DataProcessing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fmi/services/DataProcessing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fmi/services/DeserializeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fmi/services/DeserializeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fmi/services/SearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fmi/services/SearchService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/fmi/util/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fmi/util/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fmi/util/ContactList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fmi/util/ContactList.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,89 +19,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/fmi/services/SearchService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/fmi/util/Contact.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="138" column="43" selection-start-line="138" selection-start-column="43" selection-end-line="138" selection-end-column="43" />
-              <folding>
-                <element signature="method#Contact#0;class#Contact#0" />
-                <element signature="class#826:1022" />
-                <element signature="e#969#970#0" expanded="true" />
-                <element signature="e#1050#1051#0" expanded="true" />
-                <element signature="method#Contact#1;class#Contact#0" />
-                <element signature="class#1510:1706" />
-                <element signature="e#1653#1654#0" expanded="true" />
-                <element signature="e#1734#1735#0" expanded="true" />
-                <element signature="method#addReminder#0;class#Contact#0" />
-                <element signature="method#printAllReminders#0;class#Contact#0" />
-                <element signature="e#1947#2004#1" />
-                <element signature="method#deleteOldReminders#0;class#Contact#0" />
-                <element signature="e#2214#2402#1" />
-                <element signature="e#2346#2392#1" />
-                <element signature="method#toString#0;class#Contact#0" />
-                <element signature="e#2635#2662#1" />
-                <element signature="method#toCSV#0;class#Contact#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/fmi/datatypes/Reminder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
-              <folding>
-                <element signature="method#Reminder#0;class#Reminder#0" />
-                <element signature="method#Reminder#1;class#Reminder#0" />
-                <element signature="method#toCSV#0;class#Reminder#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/fmi/datatypes/Adress.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="294">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
               <folding>
                 <element signature="method#Adress#0;class#Adress#0" />
                 <element signature="method#Adress#1;class#Adress#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/fmi/services/DeserializeService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="665">
-              <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#Adress#2;class#Adress#0" />
+                <element signature="method#toCSV#0;class#Adress#0" />
               </folding>
             </state>
           </provider>
@@ -115,22 +44,120 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/fmi/datatypes/Reminder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="564">
+              <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+              <folding>
+                <element signature="method#Reminder#0;class#Reminder#0" />
+                <element signature="method#Reminder#1;class#Reminder#0" />
+                <element signature="method#toCSV#0;class#Reminder#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/fmi/services/AuditService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/fmi/services/DataProcessing.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="36" column="63" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
+              <folding>
+                <element signature="method#dateToString#0;class#DataProcessing#0" />
+                <element signature="method#dateToString#1;class#DataProcessing#0" />
+                <element signature="method#createDateFromString#0;class#DataProcessing#0" />
+                <element signature="e#642#737#0" />
+                <element signature="e#758#872#0" />
+                <element signature="method#createDateFromString#1;class#DataProcessing#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/fmi/services/DeserializeService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
+              <folding>
+                <element signature="method#deserializeAdresses#0;class#DeserializeService#0" />
+                <element signature="e#460#515#1" />
+                <element signature="method#deserializeOrganisations#0;class#DeserializeService#0" />
+                <element signature="e#802#868#1" />
+                <element signature="method#deserializeContacts#0;class#DeserializeService#0" />
+                <element signature="e#1141#1197#1" />
+                <element signature="method#deserializeReminders#0;class#DeserializeService#0" />
+                <element signature="e#1468#1526#1" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/fmi/services/FileService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
-              <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+              <caret line="35" column="53" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="53" />
               <folding>
                 <element signature="method#appendLinesToFile#0;class#FileService#0" />
-                <element signature="e#217#399#0" />
-                <element signature="e#319#354#1" />
-                <element signature="e#318#441#0" />
                 <element signature="method#appendLineToFile#0;class#FileService#0" />
-                <element signature="e#663#817#0" />
-                <element signature="e#875#998#0" />
                 <element signature="method#readLinesFromFile#0;class#FileService#0" />
-                <element signature="e#660#845#0" />
-                <element signature="e#809#845#1" />
-                <element signature="e#829#874#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/fmi/services/SearchService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/fmi/util/Contact.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-295">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
+              <folding>
+                <element signature="method#Contact#0;class#Contact#0" />
+                <element signature="method#Contact#1;class#Contact#0" />
+                <element signature="method#addReminder#0;class#Contact#0" />
+                <element signature="method#addReminder#1;class#Contact#0" />
+                <element signature="method#printAllReminders#0;class#Contact#0" />
+                <element signature="method#deleteOldReminders#0;class#Contact#0" />
+                <element signature="method#toString#0;class#Contact#0" />
+                <element signature="method#toCSV#0;class#Contact#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/fmi/util/ContactList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="385">
+              <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#add#0;class#ContactList#0" />
+                <element signature="method#delete#0;class#ContactList#0" />
+                <element signature="method#findAproximationMatch#0;class#ContactList#0" />
+                <element signature="method#findExactMatch#0;class#ContactList#0" />
               </folding>
             </state>
           </provider>
@@ -159,18 +186,19 @@
         <option value="$PROJECT_DIR$/src/com/fmi/datatypes/DataFormat.java" />
         <option value="$PROJECT_DIR$/src/com/fmi/datatypes/PhoneNumber.java" />
         <option value="$PROJECT_DIR$/src/com/fmi/datatypes/Birthday.java" />
-        <option value="$PROJECT_DIR$/src/com/fmi/util/ContactList.java" />
         <option value="$PROJECT_DIR$/src/com/fmi/util/Meeting.java" />
         <option value="$PROJECT_DIR$/src/com/fmi/util/Event.java" />
         <option value="$PROJECT_DIR$/src/com/fmi/datatypes/Adress.java" />
         <option value="$PROJECT_DIR$/src/com/fmi/datatypes/Organisation.java" />
-        <option value="$PROJECT_DIR$/src/com/fmi/services/DataProcessing.java" />
         <option value="$PROJECT_DIR$/src/com/fmi/services/FileService.java" />
-        <option value="$PROJECT_DIR$/src/com/fmi/services/DeserializeService.java" />
         <option value="$PROJECT_DIR$/src/com/fmi/datatypes/Reminder.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/fmi/services/AuditService.java" />
+        <option value="$PROJECT_DIR$/src/com/fmi/services/DataProcessing.java" />
+        <option value="$PROJECT_DIR$/src/com/fmi/services/DeserializeService.java" />
         <option value="$PROJECT_DIR$/src/com/fmi/services/SearchService.java" />
         <option value="$PROJECT_DIR$/src/com/fmi/util/Contact.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/fmi/util/ContactList.java" />
       </list>
     </option>
   </component>
@@ -234,7 +262,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559538169083" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559542993320" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -332,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559535280052</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Implemented persistence functionality">
+      <created>1559538192949</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1559538192949</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -353,15 +388,15 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.22147651" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.22147651" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49932885" weight="0.2733711" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49932885" visible="true" weight="0.2733711" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50067115" side_tool="true" weight="0.2733711" />
       <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.49932885" weight="0.34560907" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.25070822" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.25070822" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -413,19 +448,8 @@
     <MESSAGE value="Tested Event and Meeting Class.&#10;First stage done." />
     <MESSAGE value="Implemented indexing, csv serialization and deserialization for Adress, Organisation, Reminder and Contact." />
     <MESSAGE value="Implemented DeserializeService" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented DeserializeService" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/fmi/util/Contact.java</url>
-          <line>74</line>
-          <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Implemented persistence functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented persistence functionality" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/fmi/datatypes/PhoneNumber.java">
@@ -448,19 +472,6 @@
           <caret line="12" column="10" lean-forward="true" selection-start-line="11" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/fmi/util/ContactList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
-          <folding>
-            <element signature="method#delete#0;class#ContactList#0" />
-            <element signature="method#findAproximationMatch#0;class#ContactList#0" />
-            <element signature="method#findExactMatch#0;class#ContactList#0" />
-            <element signature="method#printAllContacts#0;class#ContactList#0" />
           </folding>
         </state>
       </provider>
@@ -490,60 +501,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/fmi/services/DataProcessing.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-          <folding>
-            <element signature="method#dateToString#0;class#DataProcessing#0" />
-            <element signature="e#410#411#0" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="method#createDateFromString#0;class#DataProcessing#0" />
-            <element signature="e#615#710#0" />
-            <element signature="e#731#845#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/fmi/datatypes/Reminder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
-          <folding>
-            <element signature="method#Reminder#0;class#Reminder#0" />
-            <element signature="method#Reminder#1;class#Reminder#0" />
-            <element signature="method#toCSV#0;class#Reminder#0" />
-          </folding>
+        <state relative-caret-position="-608">
+          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/fmi/datatypes/Adress.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="294">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
           <folding>
             <element signature="method#Adress#0;class#Adress#0" />
             <element signature="method#Adress#1;class#Adress#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/fmi/services/FileService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
-          <folding>
-            <element signature="method#appendLinesToFile#0;class#FileService#0" />
-            <element signature="e#217#399#0" />
-            <element signature="e#319#354#1" />
-            <element signature="e#318#441#0" />
-            <element signature="method#appendLineToFile#0;class#FileService#0" />
-            <element signature="e#663#817#0" />
-            <element signature="e#875#998#0" />
-            <element signature="method#readLinesFromFile#0;class#FileService#0" />
-            <element signature="e#660#845#0" />
-            <element signature="e#809#845#1" />
-            <element signature="e#829#874#0" />
+            <element signature="method#Adress#2;class#Adress#0" />
+            <element signature="method#toCSV#0;class#Adress#0" />
           </folding>
         </state>
       </provider>
@@ -555,10 +528,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/fmi/datatypes/Reminder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+          <folding>
+            <element signature="method#Reminder#0;class#Reminder#0" />
+            <element signature="method#Reminder#1;class#Reminder#0" />
+            <element signature="method#toCSV#0;class#Reminder#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/fmi/services/AuditService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/fmi/services/DataProcessing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="36" column="63" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
+          <folding>
+            <element signature="method#dateToString#0;class#DataProcessing#0" />
+            <element signature="method#dateToString#1;class#DataProcessing#0" />
+            <element signature="method#createDateFromString#0;class#DataProcessing#0" />
+            <element signature="e#642#737#0" />
+            <element signature="e#758#872#0" />
+            <element signature="method#createDateFromString#1;class#DataProcessing#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/fmi/services/FileService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="35" column="53" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="53" />
+          <folding>
+            <element signature="method#appendLinesToFile#0;class#FileService#0" />
+            <element signature="method#appendLineToFile#0;class#FileService#0" />
+            <element signature="method#readLinesFromFile#0;class#FileService#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/fmi/services/DeserializeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="method#deserializeAdresses#0;class#DeserializeService#0" />
+            <element signature="e#460#515#1" />
+            <element signature="method#deserializeOrganisations#0;class#DeserializeService#0" />
+            <element signature="e#802#868#1" />
+            <element signature="method#deserializeContacts#0;class#DeserializeService#0" />
+            <element signature="e#1141#1197#1" />
+            <element signature="method#deserializeReminders#0;class#DeserializeService#0" />
+            <element signature="e#1468#1526#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/fmi/services/SearchService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        <state relative-caret-position="323">
+          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -567,44 +603,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/fmi/util/Contact.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="138" column="43" selection-start-line="138" selection-start-column="43" selection-end-line="138" selection-end-column="43" />
+        <state relative-caret-position="-295">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
           <folding>
             <element signature="method#Contact#0;class#Contact#0" />
-            <element signature="class#826:1022" />
-            <element signature="e#969#970#0" expanded="true" />
-            <element signature="e#1050#1051#0" expanded="true" />
             <element signature="method#Contact#1;class#Contact#0" />
-            <element signature="class#1510:1706" />
-            <element signature="e#1653#1654#0" expanded="true" />
-            <element signature="e#1734#1735#0" expanded="true" />
             <element signature="method#addReminder#0;class#Contact#0" />
+            <element signature="method#addReminder#1;class#Contact#0" />
             <element signature="method#printAllReminders#0;class#Contact#0" />
-            <element signature="e#1947#2004#1" />
             <element signature="method#deleteOldReminders#0;class#Contact#0" />
-            <element signature="e#2214#2402#1" />
-            <element signature="e#2346#2392#1" />
             <element signature="method#toString#0;class#Contact#0" />
-            <element signature="e#2635#2662#1" />
             <element signature="method#toCSV#0;class#Contact#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/fmi/services/DeserializeService.java">
+    <entry file="file://$PROJECT_DIR$/src/com/fmi/util/ContactList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+        <state relative-caret-position="385">
+          <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#add#0;class#ContactList#0" />
+            <element signature="method#delete#0;class#ContactList#0" />
+            <element signature="method#findAproximationMatch#0;class#ContactList#0" />
+            <element signature="method#findExactMatch#0;class#ContactList#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
         </state>
       </provider>
     </entry>
