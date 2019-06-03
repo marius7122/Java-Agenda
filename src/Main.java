@@ -53,12 +53,18 @@ public class Main {
         c.addReminder("do task 5",
                 DataProcessing.createDateFromString("2019-10-10"));
         c.addReminder("do task 6",
-                DataProcessing.createDateFromString("2019-10-7"));
+                DataProcessing.createDateFromString("2019-5-7"));
         c.addReminder("do task 7",
+                DataProcessing.createDateFromString("2019-5-3"));
+        c.addReminder("do task 8",
                 DataProcessing.createDateFromString("2019-10-3"));
+        c.addReminder("do task 9",
+                DataProcessing.createDateFromString("2019-10-7"));
 
         // reminders test
         System.out.println("reminders test:");
+        c.printAllReminders();
+        c.deleteOldReminders();
         c.printAllReminders();
 
 

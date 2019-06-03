@@ -1,9 +1,11 @@
 package com.fmi.util;
 
 import com.fmi.datatypes.*;
+import com.fmi.services.DataProcessing;
 
 import java.util.Comparator;
 import java.util.Date;
+import java.util.Iterator;
 import java.util.TreeSet;
 
 public class Contact {
@@ -39,6 +41,21 @@ public class Contact {
             System.out.println(r.describe());
         }
         System.out.println();
+    }
+
+    public void deleteOldReminders() {
+        Date today = DataProcessing.today();
+
+        Iterator<Reminder> iter = reminders.iterator();
+
+        while(iter.hasNext()) {
+            Reminder r = iter.next();
+
+            // due date is in the past
+            if(today.compareTo(r.getDueDate()) > 0) {
+                iter.remove();
+            }
+        }
     }
 
     @Override

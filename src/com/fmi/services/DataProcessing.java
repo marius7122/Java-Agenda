@@ -31,4 +31,9 @@ public class DataProcessing {
         return createDateFromString(dateString, "yyyy-MM-dd");
     }
 
+    public static Date today() {
+        return new Date();
+    }
+
+
 }
