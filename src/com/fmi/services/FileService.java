@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class FileService {
 
-    public void appendLinesToFile(String path, ArrayList<String> data) {
+    public static void appendLinesToFile(String path, ArrayList<String> data) {
         try {
             FileWriter out = new FileWriter(new File(path), true);
 
@@ -22,7 +22,7 @@ public class FileService {
         }
     }
 
-    public void appendLineToFile(String path, String line) {
+    public static void appendLineToFile(String path, String line) {
         try {
             FileWriter out = new FileWriter(new File(path), true);
             out.write(line + "\n");
@@ -33,7 +33,7 @@ public class FileService {
         }
     }
 
-    public ArrayList<String> readLinesFromFile(String path) {
+    public static ArrayList<String> readLinesFromFile(String path) {
         ArrayList<String> data = new ArrayList<>();
         try {
             Scanner in = new Scanner(new File(path));
