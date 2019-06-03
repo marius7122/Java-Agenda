@@ -10,19 +10,42 @@ import java.util.TreeSet;
 
 public class Contact {
 
+    private static int lastId = 0;
+
+    int id;
     private String firstName;
     private String lastName;
     private String phoneNumber;
-    private Adress adress;
-    private Organisation organisation;
+    private int adressId;
+    private String organisationName;
     private TreeSet<Reminder> reminders;
 
-    public Contact(String firstName, String lastName, String phoneNumber, Adress adress, Organisation organisation) {
+    public Contact(String firstName, String lastName, String phoneNumber, int adressId, String organisationName) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
-        this.adress = adress;
-        this.organisation = organisation;
+        this.adressId = adressId;
+        this.organisationName = organisationName;
+        this.reminders = new TreeSet<Reminder>(new Comparator<Reminder>() {
+            @Override
+            public int compare(Reminder r1, Reminder r2) {
+                return r1.getDueDate().compareTo(r2.getDueDate());
+            }
+        });
+        this.id = ++lastId;
+    }
+
+    public Contact(String csvLine) {
+        // id, firstName, lastName, phonenumber, adressId, organisationName
+        String[] vars = csvLine.split(",");
+
+        this.id = Integer.parseInt(vars[0]);
+        this.firstName = vars[1];
+        this.lastName = vars[2];
+        this.phoneNumber = vars[3];
+        this.adressId = Integer.parseInt(vars[4]);
+        this.organisationName = vars[5];
+
         this.reminders = new TreeSet<Reminder>(new Comparator<Reminder>() {
             @Override
             public int compare(Reminder r1, Reminder r2) {
@@ -32,7 +55,7 @@ public class Contact {
     }
 
     public void addReminder(String description, Date dueDate) {
-        Reminder r = new Reminder(description, dueDate);
+        Reminder r = new Reminder(description, dueDate, id);
         reminders.add(r);
     }
 
@@ -64,8 +87,6 @@ public class Contact {
     }
 
 
-
-
     // getters and setters
     public String getFirstName() {
         return firstName;
@@ -83,20 +104,21 @@ public class Contact {
         this.lastName = lastName;
     }
 
-    public Adress getAdress() {
-        return adress;
+    public void setAdress(int adressId) {
+        this.adressId = adressId;
     }
 
-    public void setAdress(Adress adress) {
-        this.adress = adress;
+    public String getOrganisationName() {
+        return organisationName;
     }
 
-    public Organisation getOrganisation() {
-        return organisation;
+    public void setOrganisationName(String organisationName) {
+        this.organisationName = organisationName;
     }
 
-    public void setOrganisation(Organisation organisation) {
-        this.organisation = organisation;
+    public String toCSV() {
+        return Integer.toString(id) + "," + firstName + "," + lastName + "," + phoneNumber + ","
+                + Integer.toString(adressId) + "," + organisationName;
     }
 
 }

@@ -13,7 +13,7 @@ public class DataProcessing {
     }
 
     public static String dateToString(Date date) {
-        return dateToString(date, "MM/dd/yyyy");
+        return dateToString(date, "yyyy-MM-dd");
     }
 
     public static Date createDateFromString(String dateString, String format) {
@@ -34,6 +34,4 @@ public class DataProcessing {
     public static Date today() {
         return new Date();
     }
-
-
 }
