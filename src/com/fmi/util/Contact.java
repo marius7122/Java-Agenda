@@ -2,6 +2,7 @@ package com.fmi.util;
 
 import com.fmi.datatypes.*;
 import com.fmi.services.DataProcessing;
+import com.fmi.services.SearchService;
 
 import java.util.Comparator;
 import java.util.Date;
@@ -59,6 +60,10 @@ public class Contact {
         reminders.add(r);
     }
 
+    public void addReminder(Reminder r) {
+        reminders.add(r);
+    }
+
     public void printAllReminders() {
         for(Reminder r: reminders) {
             System.out.println(r.describe());
@@ -83,7 +88,18 @@ public class Contact {
 
     @Override
     public String toString() {
-        return firstName + " " + lastName;
+        String remindersStr = "";
+        for(Reminder r: reminders) {
+            remindersStr += r.describe() + "\n";
+        }
+
+        return firstName + " " + lastName + ":\n" + "Organisation: " + organisationName + "\n"
+                + "Reminders: \n" + remindersStr;
+    }
+
+    public String toCSV() {
+        return Integer.toString(id) + "," + firstName + "," + lastName + "," + phoneNumber + ","
+                + Integer.toString(adressId) + "," + organisationName;
     }
 
 
@@ -116,9 +132,16 @@ public class Contact {
         this.organisationName = organisationName;
     }
 
-    public String toCSV() {
-        return Integer.toString(id) + "," + firstName + "," + lastName + "," + phoneNumber + ","
-                + Integer.toString(adressId) + "," + organisationName;
+    public int getId() {
+        return id;
+    }
+
+    public TreeSet<Reminder> getReminders() {
+        return reminders;
+    }
+
+    public static void setLastId(int _lastId) {
+        lastId = _lastId;
     }
 
 }

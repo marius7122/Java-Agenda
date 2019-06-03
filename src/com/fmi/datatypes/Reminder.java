@@ -60,6 +60,10 @@ public class Reminder implements DataFormat{
         return id;
     }
 
+    public int getContactId() {
+        return contactId;
+    }
+
     public String toCSV() {
         return Integer.toString(id) + "," + description + "," + DataProcessing.dateToString(dueDate)
                 + "," + Integer.toString(contactId);
